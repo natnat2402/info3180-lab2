@@ -1,0 +1,42 @@
+{% extends 'base.html' %} 
+
+{%block main%}
+
+<div class="cardcontainer">
+    <div class="cardtop">
+        
+        <div class="info">
+            <img alt="avatar" src={{ url_for('static', filename="pic.png") }}>
+            <div class="title">
+                <h2>Nathaniel Jones</h2>
+            </div>
+            <div class="desc"><p>@njones</p></div>
+            <div class="desc"><p>Kingston, Jamaica</p></div>
+            <div class="desc"><p>Joined {{date}}</p></div>
+        </div>
+    </div>
+
+    <div class="cardbottom">
+        <div class="paragraph"><p>I am a 26 year old aspiring Information technology Specialist who loves all aspects of technology, both from a historical and futuristic standpoint. 
+            My favorite activities include video games, embarking on adventures outdoors and going out with friends.</p></div>
+        
+        <table>
+            <tr>
+                <th>12</th>
+                <th>78</th>
+                <th>243</th>
+            </tr>
+            <tr>
+                <td>Posts</td>
+                <td>Following</td>
+                <td>Followers</td>
+            </tr>
+
+        </table>
+
+        <div class = "button"><button type="button" onclick=" ">Follow</button></div>
+
+    </div>
+    
+</div>
+{% endblock %}
